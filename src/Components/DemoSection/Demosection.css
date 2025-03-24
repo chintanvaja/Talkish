@@ -1,0 +1,55 @@
+.demo_main {
+    position: relative;
+    top: 460px;
+    padding: 50px 0px;
+  }
+  .demo_row {
+    background-color: #000;
+    color: #fff;
+    border-radius: 25px;
+    padding: 40px 20px 0 20px;
+  }
+  .demo_right img {
+    width: 50%;
+  }
+  .demo_left {
+    padding: 30px 0px 70px 0px;
+  }
+  .demo_left h1 {
+    margin-bottom: 30px;
+  }
+  .demo_left a {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px -1px;
+    transition: all 0.3s linear;
+  }
+  
+  .demo_left a:hover {
+    background: linear-gradient(to right, #ad2f89 0%, #3d34f0 110%);
+  }
+  .demo_left h1 {
+    max-width: 72%;
+  }
+  .demo_left a i {
+    opacity: 0;
+    transform: translateX(-15px);
+    transition: all 0.3s linear;
+  }
+  .demo_left a:hover > i {
+    opacity: 1;
+    transform: translateX(3px);
+  }
+  .demo_left p{
+    display: inline;
+    color: #fff;
+    position: relative;
+    left: 7px;
+    transition: all 0.3s linear;
+  }
+  .demo_left a:hover > p {
+    left: 0px;
+  }
+  

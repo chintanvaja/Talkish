@@ -1,0 +1,62 @@
+.faq_main{
+    position: relative;
+    top: 460px;
+    padding: 50px 0px;
+  }
+  
+  .accordion{
+    border-radius: 20px;
+  }
+  .accordion-button:focus{
+    box-shadow: none;
+    border-color: lightgray;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid lightgray;
+  }
+  .accordion-button:not(.collapsed)::after{
+    background-image: none;
+  }
+  .accordion-button::after {
+      width: 10px;
+      height: 10px;
+      content: "";
+      background-image: url(../../../public/Icons/plus.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: none !important;
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url(../../../public/Icons/minus.png);
+    transform: none !important;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #212529;
+    background-color: #fff;
+    box-shadow: none;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .accordion-item:not(:first-of-type) {
+    border-top: 1px;
+}
+.accordion-button{
+    border: 1px solid lightgray;
+    background-color: rgb(211 211 211 / 19%);
+    border-radius: 20px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed{
+
+    border-radius: 20px;
+}
+.accordion-item,  .accordion-item:first-of-type .accordion-button {
+    border-radius: 20px !important;
+}
+.accordion-item:first-of-type .accordion-button:not(.collapsed) {
+  border-bottom-right-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+
+.accordion-item{
+  margin-bottom: 30px;
+}
